@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Unicordoba</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="casa-box custom-box hide">
+	<h3>Instrucciones:</h3>
+	<p>Numero total de preguntas: <span class="total-question">8</span></p>
+	<button type="button" class="btn">Iniciar Quiz</button>
+</div>
+
+<div class="test-box custom-box">
+	<div class="numero-preguntas">
+		
+	</div>
+    <div class="texto-preguntas">  
+		
+	</div>
+	<div class="opciones-contenedor">
+		
+	</div>
+	<div class="siguiente-preguntas-btn">
+		<button type="button" class="btn" onclick="siguiente()">Siguiente</button>
+	</div>
+	<!-- Colocar 8 circulos de indicadores de preguntas -->
+	<div class="preguntas-indicador">
+		
+	</div>
+</div>
+
+<div class="resultado-box custom-box hide">
+<h1>Resultados del Test</h1>
+<table>
+	<tr>
+		<!-- se usa td para hacer una tabla con division -->
+		<td>Total de preguntas</td>
+		<td><span class="total-preguntas">8</span></td>
+	</tr>
+	<tr>
+		<td>Intentos</td>
+		<td><span class="total-intentos">4</span></td>
+	</tr>
+	<tr>
+		<td>Correctas</td>
+		<td><span class="total-correctas">3</span></td>
+	</tr>
+	<tr>
+		<td>Incorrectas</td>
+		<td><span class="total-incorrectas">1</span></td>
+	</tr>
+	<tr>
+		<td>Porcentaje</td>
+		<td><span class="porcentaje">60.00%</span></td>
+	</tr>
+	<tr>
+		<td>Puntaje total</td>
+		<td><span class="total-puntaje">3 / 8</span></td>
+	</tr>
+</table>
+<button type="button" class="btn">Volver a intentar</button>
+<button type="button" class="btn">Ir a inicio</button>
+</div>
+
+
+<script src="js/preguntas.js"></script>
+<script src="js/aplicacion.js"></script>
+</body>
+</html>
+
+

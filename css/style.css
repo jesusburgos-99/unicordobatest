@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+body{
+    margin: 0;
+    font-size: 16px;
+    background-color: #2777f0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/*"aqui se modifica el area del html principal"*/
+.custom-box{
+ max-width: 700px;
+ background-color: #ffffff;
+margin: 40px auto;
+padding: 30px;
+border-radius: 10px;
+}
+
+/*colocar blanco alredor de cuadro de preguntas*/
+.custom-box::before,
+.custom-box::after{
+    content: '';
+    clear:both;
+    display: table;
+}
+
+
+
+
+/*ocultar secciones*/
+.custom-box.hide{
+    display: none;
+}
+.casa-box h3{
+    font-size: 18px;
+    color:#000000;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.casa-box p{
+    font-size: 16px;
+    margin-bottom: 10px;    
+    line-height: 22px;
+    color:#000000;
+    font-weight: 400;
+}
+
+
+.casa-box p span{
+    font-weight: 500;
+}
+/*css del boton*/
+.casa-box .btn{
+    margin-top: 20px;
+}
+.btn{
+    padding: 15px 45px;
+    background-color: #009688 ;
+    color:#ffffff;
+    border:none;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.test-box .numero-preguntas,
+.test-box .texto-preguntas,
+.test-box .opciones-contenedor,
+.test-box .siguiente-preguntas-btn,
+.test-box .preguntas-indicador{
+width: 100%;
+float: left;
+}
+.test-box .numero-preguntas{
+    font-size: 18px;
+    color: #009688;
+    font-weight: 600;
+    border-bottom: 1px solid #cccccc ;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+.test-box .texto-preguntas{
+    font-size: 22px;
+    color: #000000;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin: 0;
+}
+
+
+/*darle color al borde de las preguntas*/
+
+.test-box .opciones-contenedor .opciones{
+    background-color:#d3d3d3 ;
+    padding: 13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color:#000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+/*espacio para boton siguiente*/
+.test-box .btn{
+  margin: 17px 0;  
+}
+
+
+.test-box .preguntas-indicador{
+    border-top: 1px solid #d3d3d3;
+}
+.test-box .preguntas-indicador div{
+height: 40px;
+width: 40px;
+display: inline-block;
+background-color: #d3d3d3;
+border-radius: 50%;
+margin-right: 3px;
+margin-top: 14px;
+}
+
+
+
+.resultado-box{
+    text-align: center;
+}
+
+.resultado-box.hide{
+display: none;
+
+}
+
+
+.resultado-box h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: #009688;
+}
+
+/*Espacio y css para el total de preguntas hacia abajo*/
+.resultado-box table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+/*color negrilla a los resultados y css*/
+.resultado-box table td{
+    border:1px solid #d3d3d3;
+    /*Espacio para los resultados*/
+    padding: 8px 15px;
+    font-weight: 500;
+    color: #000000;
+    /*Alineacion de los resultados*/
+    width: 50%;
+    text-align: left;
+    /*Tamaño de los resultados*/
+    font-size: 18px;
+}
+/*Espacio entre los botones "volver a intentar" y "ir a inicio"*/
+.resultado-box .btn{
+    margin-right: 20px; 
+}
